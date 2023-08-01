@@ -23,5 +23,6 @@ export class AppComponent {
      console.log(this.base);
      console.log(this.to);
      console.log(this.input);
+     console.log(this.res == "1.00");
   }
 }
