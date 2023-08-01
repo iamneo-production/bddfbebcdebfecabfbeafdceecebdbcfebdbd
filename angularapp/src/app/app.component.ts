@@ -12,14 +12,14 @@ export class AppComponent {
 
   base:any=0;
   to:any=0;
-  res='0.00'
+  res='1.00'
 
   convert(c:any,a:any,b:any){
     this.input=c;
     this.base=Number(a);
     this.to=Number(b);
      this.output= Math.round(this.input * (this.to/this.base));
-     this.res=this.output.toString().concat(".00");
+     this.res=this.output.toString().concat(".00").toString();
      console.log(this.base);
      console.log(this.to);
      console.log(this.input);
