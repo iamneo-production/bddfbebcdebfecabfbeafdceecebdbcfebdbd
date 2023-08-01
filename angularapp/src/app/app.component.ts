@@ -12,9 +12,11 @@ export class AppComponent {
 
   base:any=0;
   to:any=0;
-  res:any=0.00
+  res:any=0.00;
+  submitted = false;
 
   convert(c:any,a:any,b:any){
+    this.submitted = true;
     this.input=c;
     this.base=Number(a);
     this.to=Number(b);
